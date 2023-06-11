@@ -1,0 +1,231 @@
+<!Doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DC Comics - vodilni ameriški založnik stripov">
+    <meta name="keywords" content="DC Comics, strip, superheroj, filmi, igre">
+    <meta name="author" content="Nik Ancimer">
+	  <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="icon" href="slike/DC_Logo.ico" type="image/x-icon">
+    <title>DC Comics</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        h1{
+            font-style: italic;
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 480px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        
+          .besedilo{
+            font-size: 12px;
+          }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            height: 750px;
+           
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        .besedilo{
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .ustanovitelj_slika{
+            padding-left: 10px;
+            padding-top: 10px;
+            border-radius: 10%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+      </style>
+  </head>
+  <body class="p-2 m-0 border-0 bd-example ozzadje">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white okvir">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://en.wikipedia.org/wiki/DC_Comics">
+              <img src="slike/DC_Logo.jpg" alt="logo" width="50" height="50">
+              
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Domov</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ustanovitelji.html">Ustanovitelji</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmi.html">Filmi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="igre.html">Igre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Svet Superherojev
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="karakterji/Superman.html">Superman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Batman.html">Batman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Wonder_Woman.html">Wonder Woman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Green_Lantern.html">Green Lantern</a></li>
+                  <li><a class="dropdown-item" href="karakterji/The_Flash.html">The Flash</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Aquaman.html">Aquaman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Shazam.html">Shazam</a></li>
+                  </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pojdi</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <h1>Ustanovitelji DC Comics in njihovih najbol popularnih filmov</h1>
+        <br>
+
+        <div class="row">
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Major_Malcolm_Wheeler-Nicholson1.jpg" alt="Maj_Malcolm_Wheeler" width="300px" height="300px">
+            <div class="container">
+                <h2>Maj Malcolm Wheeler</h2>
+                <p class="title">Ustanovitelj DC Comics</p>
+                <p class="besedilo">Major Malcolm Wheeler-Nicholson (7. januar 1890 – 21. september 1965) je bil ameriški pisatelj in podjetnik v reviji Pulp, ki je bil pionir ameriškega stripa, saj je izdal prvo takšno periodično publikacijo, ki je bila sestavljena izključno iz izvirnega materiala in ne iz ponatisov časopisnih stripov. Zgodovinar in avtor David Hajdu pripisuje Wheeler-Nicholsonu "vezo med pulpi in tistim, kar danes poznamo kot strip." [3] Leta 1934 je ustanovil stripovsko podjetje National Allied Publications, ki se je kasneje razvilo v DC Comics.</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Jerry_Siegel.jpg" alt="Jerry"  width="300px" height="300px">
+            <div class="container">
+                <h2>Jerry Siegel</h2>
+                <p class="title">Ustvaril Spidermena</p>
+                <p class="besedilo">Jerome Siegel (17. oktober 1914 - 28. januar 1996) je bil ameriški pisec stripov. Je soustvarjalec filma Superman, ki ga je v sodelovanju s prijateljem Joejem Shusterjem izdal DC Comics. Ustvarili so tudi Doctor Occult, ki je bil kasneje predstavljen v The Books of Magic. Siegel in Shuster sta bila sprejeta v stripovsko industrijo Will Eisner Comic Book Hall of Fame leta 1992 in Jack Kirby Hall of Fame leta 1993. Z Bernardom Bailyjem je Siegel tudi soustvaril dolgoletni lik DC The Spectre. Siegel je ustvaril deset najzgodnejših članov Legije superjunakov, ene najbolj priljubljenih skupinskih knjig DC, ki je postavljena v 30. stoletje. Siegel je uporabljal tudi psevdonime, vključno z Joe Carter in Jerry S.</p>
+                
+            </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Joe_Shuster.jpg" alt="Joe"  width="300px" height="300px">
+            <div class="container">
+                <h2>Joe Shuster</h2>
+                <p class="title">Ustvaril Spidermena</p>
+                <p class="besedilo">Joseph Shuster (10. julij 1914 – 30. julij 1992), poklicno znan preprosto kot Joe Shuster, je bil kanadsko-ameriški stripar, najbolj znan po soustvarjanju lika DC Comics Supermana z Jerryjem Sieglom v Action Comics #1 (naslovnica z datumom junij 1938).
+                    Shuster je bil vpleten v številne pravne bitke glede lastništva lika Supermana. Njegova stripovska kariera po Supermanu je bila razmeroma neuspešna in do sredine sedemdesetih je Shuster popolnoma zapustil področje zaradi delne slepote.
+                    On in Siegel sta bila leta 1992 sprejeta v hišo slavnih stripovske industrije Willa Eisnerja in leta 1993 v hišo slavnih Jacka Kirbyja. Leta 2005 je kanadsko združenje za ustvarjanje stripovskih ustvarjalcev uvedlo nagrade Joeja Shusterja, imenovane v čast V Kanadi rojeni umetnik.</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Bob_Kane.jpg" alt="Bob"  width="350px" height="300px">
+            <div class="container">
+                <h2>Bob Kane</h2>
+                <p class="title">Ustvaril Batmana in Jokera</p>
+                <p class="besedilo">Robert Kane (rojen kot Robert Kahn; 24. oktober 1915 - 3. november 1998) je bil ameriški pisec stripov, animator in umetnik, ki je soustvaril Batmana (z Billom Fingerjem) in večino zgodnjih sorodnih likov za stripe DC. Leta 1993 je bil sprejet v hišo slavnih stripovske industrije Jacka Kirbyja in leta 1996 v hišo slavnih stripov Willa Eisnerja.</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Bill_Finger.jpg" alt="Bill"  width="300px" height="300px">
+            <div class="container">
+                <h2>Bill Finger</h2>
+                <p class="title">Ustvaril Batmana in Jokera</p>
+                <p class="besedilo">Milton "Bill" Finger (8. februar 1914 - 18. januar 1974) je bil ameriški stripovski, filmski in televizijski pisatelj, ki je bil soustvarjalec (z Bobom Kaneom) lika Batmana iz stripov DC. Kljub temu, da je kot inovativen pisatelj, vizionarski mitos/graditelj sveta in arhitekt ilustracij dal velike (včasih značilne) prispevke, je bil Finger (in drugi ustvarjalci njegovega obdobja) pogosto označen kot pisec duhov v številnih stripih – vključno z Batmanom in originalnim Green Lanternom , Alan Scott.
+                    Medtem ko je Kane v avdio intervjuju iz leta 1980 s svojim avtobiografom zasebno priznal, da je bil Finger odgovoren za "50–75 % vse ustvarjalnosti v Batmanu," je desetletja javno zanikal, da je bil Finger kaj več kot podizvajalec, ki je izvajal Kaneove zamisli. Posledično je Finger umrl v neznanju in revščini, medtem ko sta si blagovna znamka Batman in Kane pridobila mednarodno slavo in bogastvo.
+                    </p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+            <img class="ustanovitelj_slika" src="slike/ustanovitelji/Gardner_Fox.jpg" alt="Gardner"  width="300px" height="300px">
+            <div class="container">
+                <h2>Gardner Fox</h2>
+                <p class="title">Ustvaril karakterje</p>
+                <p class="besedilo">Gardner Francis Cooper Fox (20. maj 1911 – 24. december 1986) je bil ameriški pisatelj, najbolj znan po ustvarjanju številnih likov iz stripov za DC Comics. Ocenjuje se, da je napisal več kot 4000 stripovskih zgodb, vključno s 1500 za DC Comics. Fox je bil tudi avtor znanstvene fantastike in je napisal veliko romanov in kratkih zgodb.
+                    Fox je znan kot soustvarjalec junakov DC Comics Barbare Gordon, izvirnega Flasha, Hawkmana, Doctorja Fatea, Zatanne in izvirnega Sandmana, in je bil pisatelj, ki je prvi združil več teh in drugih junakov kot Justice Society of America, in kasneje ponovno ustvaril ekipo kot Justice League of America. Fox je koncept Multiverse predstavil DC Comics v zgodbi iz leta 1961 "Flash of Two Worlds!"</p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    
+        <footer>
+        <p class="nogaLevo">Avtor: Nik Ancimer</p>
+        <div class="nogaDesno">
+        ©2023 DC Comics
+        </div>
+        </footer>
+    </body>
+</html>

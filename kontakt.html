@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DC Comics - vodilni ameriški založnik stripov">
+    <meta name="keywords" content="DC Comics, strip, superheroj, filmi, igre">
+    <meta name="author" content="Nik Ancimer">
+	  <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="icon" href="slike/DC_Logo.ico" type="image/x-icon">
+    <title>DC Comics</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-2 m-0 border-0 bd-example ozzadje">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white okvir">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://en.wikipedia.org/wiki/DC_Comics">
+              <img src="slike/DC_Logo.jpg" alt="logo" width="50" height="50">
+              
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Domov</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ustanovitelji.html">Ustanovitelji</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmi.html">Filmi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="igre.html">Igre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Svet Superherojev
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="karakterji/Superman.html">Superman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Batman.html">Batman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Wonder_Woman.html">Wonder Woman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Green_Lantern.html">Green Lantern</a></li>
+                  <li><a class="dropdown-item" href="karakterji/The_Flash.html">The Flash</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Aquaman.html">Aquaman</a></li>
+                  <li><a class="dropdown-item" href="karakterji/Shazam.html">Shazam</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pojdi</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h3>Kontaktirajte nas</h3>
+        <div class="kontakt_container">
+          <form  class="kontakt" action="home.html">
+                <label for="ime">Ime</label>
+                <input type="text" id="ime" name="Ime" placeholder="Vaše ime">
+            
+                <label for="Priimek">Priimek</label>
+                <input type="text" id="Priimek" name="Priimek" placeholder="Vaš Priimek">
+            
+                <label for="Država">Država</label>
+                <select id="Država" name="Država">
+                  <option value="Slovenia">Slovenija</option>
+                  <option value="Hrvaška">Hrvaška</option>
+                  <option value="ZDA">ZDA</option>
+                  <option value="Nemčija">Nemčija</option>
+                  <option value="Avstrija">Avstrija</option>
+                  <option value="Švica">Švica</option>
+                </select>
+            
+                <label for="Vsebina">Vsebina</label>
+                <textarea id="Vsebina" name="Vsebina" placeholder="Sporočilo..." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+      
+      <footer>
+      <p class="nogaLevo">Avtor: Nik Ancimer</p>
+      <div class="nogaDesno">
+       ©2023 DC Comics
+      </div>
+    </footer>
+</body>
+</html>
